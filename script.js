@@ -3,6 +3,8 @@
 const btnGetValue = document.querySelector('.btnSearch');
 const countryCard = document.querySelector('.mainCountry');
 const borderCountries = document.querySelector('.borderCountries');
+const inputBar = document.querySelector('#findercountry');
+const inputBtn = document.querySelector('.btnSearch');
 
 ////////////////////////MAIN COUNTRY//////////////////////
 //loading loads asyncroniously
@@ -48,8 +50,6 @@ const createCountryData = function (getData) {
   countryCard.insertAdjacentHTML('beforeend', html);
 };
 
-//button click event
-
 //////////////////Borders////////////////////////
 
 //getting data for all borders
@@ -63,7 +63,7 @@ const funcCountry = async function (border) {
 };
 
 const createBorderData = function (getData) {
-  //getting data from json file dynamically
+  //getting borders data from json file dynamically
   console.log(getData[0].currencies[0].symbol);
 
   const flag = getData[0].flags.png;
@@ -75,7 +75,7 @@ const createBorderData = function (getData) {
   const currencies = getData[0].currencies[0].name;
   const currenciesSymbol = getData[0].currencies[0].symbol;
 
-  // loading html dynamically
+  // loading borders  html dynamically
   const html = `
       <div class="country">
           <div class="flag">
@@ -93,4 +93,12 @@ const createBorderData = function (getData) {
       `;
   borderCountries.insertAdjacentHTML('beforeend', html);
 };
-countryFinder('belgium');
+
+//search bar
+inputBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  clearInterval();
+  const search = inputBar.value.toLowerCase();
+  console.log(search);
+  countryFinder(search);
+});

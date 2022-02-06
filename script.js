@@ -99,4 +99,5 @@ inputBtn.addEventListener('click', function (e) {
   bordersHeading.style.display = 'block';
   const search = inputBar.value.toLowerCase();
   countryFinder(search);
+  inputBar.value = '';
 });

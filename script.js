@@ -12,8 +12,6 @@ const countryFinder = async function (country) {
   const getJson = await fetch(`https://restcountries.com/v3.1/name/${country}`);
   const getData = await getJson.json();
   createCountryData(getData);
-  console.log(getData);
-
   getData[0].borders.forEach((country) => {
     const lower = country.toLowerCase();
     funcCountry(lower);
@@ -64,8 +62,6 @@ const funcCountry = async function (border) {
 
 const createBorderData = function (getData) {
   //getting borders data from json file dynamically
-  console.log(getData[0].currencies[0].symbol);
-
   const flag = getData[0].flags.png;
   const countryName = getData[0].name;
   const continents = getData[0].region;
@@ -97,8 +93,8 @@ const createBorderData = function (getData) {
 //search bar
 inputBtn.addEventListener('click', function (e) {
   e.preventDefault();
-  clearInterval();
+  borderCountries.innerHTML = ``;
+  countryCard.innerHTML = ``;
   const search = inputBar.value.toLowerCase();
-  console.log(search);
   countryFinder(search);
 });

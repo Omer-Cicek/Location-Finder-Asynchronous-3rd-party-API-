@@ -56,7 +56,6 @@ h1 {
 .borderCountries {
   width: 100%;
   height: auto;
-  border: 1px rgb(72, 97, 165) solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +68,6 @@ h1 {
   width: 230px;
   height: 330px;
   border: 1px red solid;
-  background-color: aqua;
 }
 .bordersFlag {
   display: flex;

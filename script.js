@@ -5,6 +5,7 @@ const countryCard = document.querySelector('.mainCountry');
 const borderCountries = document.querySelector('.borderCountries');
 const inputBar = document.querySelector('#findercountry');
 const inputBtn = document.querySelector('.btnSearch');
+const bordersHeading = document.querySelector('.bordersHeading');
 
 ////////////////////////MAIN COUNTRY//////////////////////
 //loading loads asyncroniously
@@ -95,6 +96,7 @@ inputBtn.addEventListener('click', function (e) {
   e.preventDefault();
   borderCountries.innerHTML = ``;
   countryCard.innerHTML = ``;
+  bordersHeading.style.display = 'block';
   const search = inputBar.value.toLowerCase();
   countryFinder(search);
 });

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Country Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Country Finder</h1>
+
+      <form action="#">
+        <label for="findercountry"></label>
+        <input
+          type="search"
+          placeholder="Which country do you want to see?"
+          id="findercountry"
+          class="searchBar"
+          name="findercountry"
+        />
+        <button class="btnSearch" type="submit">
+          <img class="imgSearch" src="./search.png" alt="" />
+        </button>
+      </form>
+      <div class="mainCountry"></div>
+      <div class="borderCountries"></div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #fff;
+}
+.searchBar {
+  width: 350px;
+  height: 40px;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.mainCountry {
+  margin-top: 70px;
+  background-color: aqua;
+}
+.country {
+  width: 230px;
+  height: 330px;
+  background-color: aqua;
+  margin: 10px;
+}
+
+.flag {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.flagIn {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.info {
+  margin: 15px;
+  font-size: 13px;
+}
+.borderCountries {
+  width: 100%;
+  height: auto;
+  border: 1px rgb(72, 97, 165) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+.bordersCard {
+  width: 230px;
+  height: 330px;
+  border: 1px red solid;
+  background-color: aqua;
+}
+.bordersFlag {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  border: 1px red solid;
+}
+.bordersInfo {
+  font-size: 14px;
+  margin: 15px;
+}
+
+.bold {
+  font-weight: 900;
+  font-size: 14px;
+}
+.btnSearch {
+  margin-left: -5px;
+  margin-top: 15px;
+}
+.btnSearch:hover {
+  cursor: pointer;
+}
+.imgSearch {
+  width: 23px;
+  height: 23px;
+}

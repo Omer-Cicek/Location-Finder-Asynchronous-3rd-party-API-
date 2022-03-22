@@ -8,6 +8,8 @@ Thanks to visit my Github! In this project, i used HTML, CSS and JavaScript. Her
 
 **To do this project, i used HTML, CSS and JavaScript (async-await).**
 
+In this project, i used (https://restcountries.com/) API
+
 ## The challenge
 
 Users should be able to:
